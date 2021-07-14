@@ -8,7 +8,7 @@ body{
 p{
     font-family: 'Poppins', sans-serif;
 }
- 
+ /* -----banner start----- */
  .menu-left a{
     text-decoration: none;
     color: white;
@@ -59,6 +59,7 @@ p{
     cursor: pointer; 
     animation-duration: 3s;      
 }
+/* -----this part is for animation----- */
 .banner-part:hover .link-button{
     animation: bounce 1s linear;
     
@@ -125,13 +126,14 @@ p{
 .head-part{
     color: white;
 }
+/* ------banner end------- */
 
+/* ------player secttion start---- */
 .players-img img{
     width: 300px;
     height: 256px;
     padding-left: 15px;
-    padding-top: 15px;
-    /* margin-top: 70px; */
+    padding-top: 15px;   
 }
 .football-players{
     width: 330px;
@@ -151,6 +153,9 @@ p{
     padding-top: 27px;
     padding-bottom: 27px;
 }
+/* ------player section end------ */
+
+/* highlight area */
 .high-text{
     width: 466px;
     height: 309px;
@@ -169,6 +174,8 @@ p{
 .highlights-2021{
     display: flex;
 }
+/* ----End---- */
+/* --------this is the footer part--- */
 .logo-img img{
     width: 483.87px;
 height: 110px;
@@ -197,6 +204,9 @@ margin-right: 481px;
 .copy-style{
     padding-left: 150px;
 }
+/* --------foooter end----- */
+
+/* -----additional part----- */
 .sub-container{
     display: flex;
     justify-content: center;
@@ -226,3 +236,53 @@ margin-right: 481px;
     background-color: #E02C6D;
 }
 
+/* ------additional area end----- */
+/* -------
+Media quries--- */
+/* --------for mobile devices------ */
+@media only screen and (max-width:688px) {
+    .banner-area{
+        background-color: #2D25A0;
+    }
+    .menu-left, .login-button{
+        display: none;
+    }
+    .banner-part> .head-part{
+        font-size: 36px;
+        margin: 80px 0 60px 156px;
+    }
+    
+.banner-part ,.highlights-2021{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.banner-part> .head-img{
+    width: 100%;
+    margin: 0 0 61.83px 120px;
+    
+}
+.highlights-2021> .high-img{
+    width: 100%;
+    margin: 124px 0 61.83px 120px;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.sub-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    margin: 140px 40px 0 0;
+}
+.sub-form{
+    align-items: center;
+    margin: 15px 300px 0 0;
+}
+.logo-area{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 100px 20px 140px;
+}   
+}
